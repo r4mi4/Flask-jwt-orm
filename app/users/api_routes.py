@@ -25,7 +25,7 @@ def auth_with_number():
         return {'error': 'sorry, you must be register !'}, 403
 
 
-@users.route('/login/check_code/')
+@users.route('/login/check_code/',methods=['POST'])
 def check_code():
     """
         Check the sent code
